@@ -1,0 +1,26 @@
+#include "taryiconwindow.h"
+
+TaryIconWindow::TaryIconWindow()
+{
+    //初始化
+    init();
+    
+    //实现槽函数
+}
+
+void TaryIconWindow::init()
+{
+    //构造一个QSystemTrayIcon类型的对象
+    //为这个对象添加QMenu和单击触发的函数
+    MyTrayIcon = new QSystemTrayIcon(this);
+    MyTrayIcon->setIcon(QIcon(":/icons/logo.svg"));
+    MyTrayIcon->setToolTip(tr("TrayIconWindow"));
+    
+    //构造menu
+    MyMenu = new QMenu(this);
+    ExitAction = new QAction(tr("退出"));
+    
+    MyTrayIcon->setContextMenu(MyMenu);
+    
+    MyTrayIcon->show();
+}

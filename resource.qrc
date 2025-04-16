@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>logo.svg</file>
+        <file>download.svg</file>
+        <file>copy.svg</file>
+        <file>rect.svg</file>
+        <file>mosaic.svg</file>
+        <file>check.svg</file>
+        <file>nail.svg</file>
+    </qresource>
+</RCC>

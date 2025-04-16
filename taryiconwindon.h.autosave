@@ -1,0 +1,21 @@
+#ifndef TARYICONWINDON_H
+#define TARYICONWINDON_H
+
+#include <QSystemTrayIcon>
+#include <QWidget>
+
+class TaryIconWindon : public QWidget
+{
+    Q_OBJECT
+public:
+    TaryIconWindon(QWidget *parent = nullptr);
+
+signals:
+    
+private:
+    QSystemTrayIcon* MyTrayIcon;
+    QSystem
+
+};
+
+#endif // TARYICONWINDON_H
